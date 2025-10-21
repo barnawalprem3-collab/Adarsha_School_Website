@@ -521,44 +521,49 @@
 </section>
 
 <!-- Thank You Section -->
-<section id="thanks" 
-  style="text-align:center; padding:60px 20px; 
-         background:linear-gradient(135deg,#f9f9f9,#eef2f3); 
-         border-top:3px solid #ddd;">
-  
-  <h2 style="font-size:28px; color:#222; font-weight:700; margin-bottom:15px;">
-    🙏 Thank You for Visiting / हाम्रो पेजमा भ्रमण गर्नुभएकोमा धन्यवाद 🙏
-  </h2>
-  
-  <p style="font-size:17px; color:#555; margin-bottom:30px;">
-    We appreciate your time and support! 💖 / तपाईंको समय र समर्थनको लागि धन्यवाद!
-  </p>
-
-  <div style="animation:float 3s ease-in-out infinite;">
-    <img src="cca8f07aea239eff9f4e07c0145e27f5%20(3).gif" 
-         alt="Thank You GIF" 
-         style="max-width:380px; width:90%; border-radius:20px; 
-                box-shadow:0 0 25px rgba(255,105,180,0.4);
-                background:white; padding:8px;">
+<meta charset="UTF-8">
+<section id="thank-you" style="background:linear-gradient(135deg,#fff8f0,#f0f9ff);padding:50px 20px;text-align:center;">
+  <div class="container" style="max-width:900px;margin:auto;">
+    <h3 style="font-size:28px;color:#222;font-weight:700;margin-bottom:20px;">
+      🙏🌟 Thank You for Visiting / हाम्रो पेजमा भ्रमण गर्नुभएकोमा धन्यवाद 🌟🙏
+    </h3>
+    <p style="font-size:17px;color:#555;margin-bottom:25px;">
+      😊 We appreciate your time and support! 💖 <br>
+      तपाईंको समय र समर्थनको लागि हार्दिक धन्यवाद! 🎉
+    </p>
+    <img src="cca8fO7aea239eff9f4eO7cO145e27f5 (3).gif" alt="Thanks for visiting my page"
+         style="width:280px;max-width:100%;border-radius:20px;box-shadow:0 4px 15px rgba(0,0,0,0.15);">
+    <p style="font-size:15px;color:#777;margin-top:20px;">
+      🌈 Come back soon! / छिट्टै फर्कनुहोस्! 🌈
+    </p>
   </div>
-
-  <style>
-    @keyframes float {
-      0% { transform:translateY(0px); }
-      50% { transform:translateY(-10px); }
-      100% { transform:translateY(0px); }
-    }
-  </style>
 </section>
 
 
 
-
  <!-- Footer -->
-<footer>
-  <p>© 2025 Adarsha Secondary School — Biratnagar, Morang / © २०२५ आदर्श माध्यमिक विद्यालय — विराटनगर, मोरङ</p>
-  <p>Website designed & developed by Prem Kumar Barnawal • Powered by Srijit Koirala / वेबसाइट डिजाइन र विकास: प्रेम कुमार बर्णवाल • पावर्ड बाई: सृजित कोईराला</p>
+<meta charset="UTF-8">
+<footer id="footer" style="background:linear-gradient(135deg,#0d47a1,#1976d2);color:#fff;text-align:center;padding:30px 20px;font-size:15px;line-height:1.7;border-top:4px solid #64b5f6;opacity:0;transform:translateY(20px);transition:opacity 1.5s ease, transform 1.5s ease;">
+  <p>© 2025 🏫 <strong>Adarsha Secondary School</strong> — Biratnagar, Morang 🇳🇵<br>
+  © २०२५ 🏫 <strong>आदर्श माध्यमिक विद्यालय</strong> — विराटनगर, मोरङ</p>
+
+  <p>💻 Website designed & developed by <strong>Prem Kumar Barnawal</strong> 👨‍💻<br>
+  ⚡ Powered by <strong>Srijit Koirala</strong> 👨‍🏫<br>
+  🌐 Thank you for visiting our website! 🙏✨</p>
 </footer>
 
+<script>
+  // Fade-in animation when footer comes into view
+  window.addEventListener('scroll', function() {
+    const footer = document.getElementById('footer');
+    const rect = footer.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 50) {
+      footer.style.opacity = '1';
+      footer.style.transform = 'translateY(0)';
+    }
+  });
+</script>
+
 </body>
-</html>  
+</html>
+ 
