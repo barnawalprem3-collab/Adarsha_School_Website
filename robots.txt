@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://barnawalprem3-collab.github.io/Adarsha_School_Website/sitemap.xml
