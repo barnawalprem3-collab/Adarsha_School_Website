@@ -66,18 +66,63 @@
     </div>
   </div>
 </header>
+<!-- 🌈 Navigation with Cartoon Emojis -->
+<style>
+  nav {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
 
-<!-- Navigation -->
+  nav a {
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    transform: scale(1.08);
+  }
+
+  /* 🌟 Emoji bounce animation */
+  nav a::before {
+    content: attr(data-emoji);
+    margin-right: 6px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  /* 📱 Mobile responsive */
+  @media (max-width: 768px) {
+    nav { flex-direction: column; text-align: center; }
+    nav a { display: block; padding: 12px; }
+  }
+</style>
+
 <nav>
-  <a href="#about">About / हाम्रो बारेमा</a>
-  <a href="#activities">Activities / क्रियाकलापहरू</a>
-  <a href="#achievements">Achievements / उपलब्धिहरू</a>
-  <a href="#gallery">Gallery / ग्यालरी</a>
-  <a href="#news">News / समाचार</a>
-  <a href="#contact">Contact / सम्पर्क</a>
-  <a href="#creator">Creator / निर्माताहरू</a>
-<a href="#powered-by">Powered By / सहयोगी</a>
+  <a href="#about" data-emoji="🏫">About / हाम्रो बारेमा</a>
+  <a href="#activities" data-emoji="🎯">Activities / क्रियाकलापहरू</a>
+  <a href="#achievements" data-emoji="🏆">Achievements / उपलब्धिहरू</a>
+  <a href="#gallery" data-emoji="📸">Gallery / ग्यालरी</a>
+  <a href="#news" data-emoji="📰">News / समाचार</a>
+  <a href="#contact" data-emoji="📞">Contact / सम्पर्क</a>
+  <a href="#creator" data-emoji="💻">Creator / निर्माताहरू</a>
+  <a href="#powered-by" data-emoji="⚡">Powered By / सहयोगी</a>
 </nav>
+
 <!-- 👋 Hello GIF Section -->
 <section id="hello" style="text-align:center; padding:40px 20px; background:#f9f9f9; border-radius:20px; margin:30px auto; max-width:900px;">
   <h2 style="color:#222; font-size:26px; margin-bottom:20px;">👋 Welcome Everyone!</h2>
