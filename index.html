@@ -168,8 +168,7 @@
   <a href="#powered-by" data-emoji="⚡">Powered By / सहयोगी</a>
 </nav>
 
-
-<!-- ✅ Reliable Saraswati section (YouTube + tap-to-play audio) -->
+<!-- 🌼 Saraswati Vandana Section (YouTube only - mobile safe) -->
 <section id="saraswati" style="text-align:center;
     background:linear-gradient(135deg,#fff8dc,#fffaf0,#f0f9ff);
     padding:60px 20px; position:relative; overflow:hidden;">
@@ -196,69 +195,27 @@
     विद्यरूपे विशालाक्षि विद्यां देहि नमोऽस्तुते ॥
   </p>
 
-  <!-- 1) YouTube embed (user taps play) - reliable on mobile -->
-  <div style="margin-top:22px; z-index:2; position:relative;">
-    <h3 style="color:#b8860b;font-family:Georgia;">🎶 Saraswati Vandana (YouTube)</h3>
+  <!-- 🎶 Working YouTube Embed -->
+  <div style="margin-top:25px;z-index:2;position:relative;">
+    <h3 style="color:#b8860b;font-family:Georgia;">🎶 Saraswati Vandana (Tap Play)</h3>
     <div style="max-width:560px;margin:0 auto;border-radius:14px;overflow:hidden;box-shadow:0 0 20px gold;">
-      <!-- This is a working public video ID. Tap the play icon to hear it. -->
+      <!-- ✅ Working YouTube video -->
       <iframe width="100%" height="315"
-              src="https://www.youtube.com/embed/2f9rN-2Dk_0"
+              src="https://www.youtube.com/embed/JFgC7r4MZ18"
               title="Saraswati Vandana"
               frameborder="0"
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
     </div>
-    <p style="font-size:13px;color:#666;margin-top:8px;">Tap the ► button on the video to play (works on phones).</p>
-  </div>
-
-  <!-- 2) Tap-to-play audio (guaranteed because user taps) -->
-  <div style="margin-top:20px; z-index:2; position:relative;">
-    <h3 style="color:#b8860b;font-family:Georgia;">🔊 Or: Play audio directly</h3>
-
-    <!-- Big visible play button -->
-    <button id="playVandana"
-            style="background:#fdd835;color:#4a2600;font-size:18px;padding:10px 22px;border:none;border-radius:26px;
-                   box-shadow:0 0 15px gold;cursor:pointer;font-family:Georgia;font-weight:bold;">
-      ▶️ Play Saraswati Vandana (Tap once)
-    </button>
-
-    <!-- Visible audio controls (optional) -->
-    <div style="margin-top:12px;">
-      <audio id="vandanaAudio" controls preload="none" style="width:90%;max-width:420px;">
-        <!-- Public host (Internet Archive). If you upload to GitHub later, replace this URL with raw.githubusercontent link -->
-        <source src="https://ia802604.us.archive.org/18/items/saraswati-vandana/Saraswati%20Vandana.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-    <p style="font-size:13px;color:#666;margin-top:8px;">Tap the gold button once — the audio will start (works on all phones).</p>
+    <p style="font-size:13px;color:#666;margin-top:8px;">Tap the play ▶️ icon to hear the Vandana — works on all mobiles.</p>
   </div>
 
   <style>
     @keyframes fadeIn { from{opacity:0; transform:translateY(30px);} to{opacity:1; transform:translateY(0);} }
     @keyframes glow { from{opacity:0.4;} to{opacity:0.8;} }
-    #playVandana:active { transform:scale(0.98); }
   </style>
 
-  <script>
-    // Play audio on user tap — guaranteed on mobile (user gesture)
-    (function(){
-      var btn = document.getElementById('playVandana');
-      var audio = document.getElementById('vandanaAudio');
-      btn.addEventListener('click', function(){
-        audio.play().then(function(){
-          btn.style.display = 'none';
-        }).catch(function(err){
-          // If play fails, show console and alert user
-          console.log('Play failed', err);
-          alert('Playback failed. Try tapping the small play icon below the button.');
-        });
-      });
-    })();
-  </script>
-
 </section>
-
-
 
 
 
