@@ -182,6 +182,7 @@
     🌺 श्री सरस्वती देवी 🌺
   </h2>
 
+  <!-- Your Original Saraswati GIF -->
   <img src="https://raw.githubusercontent.com/barnawalprem3-collab/Adarsha_School_Website/main/url%20(1).gif" 
        alt="Goddess Saraswati" 
        style="width:320px; max-width:90%; border-radius:25px; box-shadow:0 0 30px gold; margin-top:20px;
@@ -196,11 +197,11 @@
     विद्यरूपे विशालाक्षि विद्यां देहि नमोऽस्तुते ॥
   </p>
 
-  <!-- 🎵 Saraswati Vandana Song -->
+  <!-- 🎶 Saraswati Vandana Song -->
   <div style="margin-top:30px; z-index:2; position:relative;">
-    <h3 style="color:#b8860b; font-family:'Georgia'; font-size:22px;">🎶 Saraswati Vandana</h3>
-    <audio id="vandanaAudio" style="margin-top:10px; border-radius:30px; padding:5px; box-shadow:0 0 25px gold;">
-      <source src="https://ia802604.us.archive.org/18/items/saraswati-vandana/Saraswati%20Vandana.mp3" type="audio/mpeg">
+    <h3 style="color:#b8860b; font-family:'Georgia';">🎶 Saraswati Vandana</h3>
+    <audio controls autoplay loop>
+      <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0a3e1df6a1.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
@@ -214,47 +215,12 @@
       from { opacity: 0.4; }
       to { opacity: 0.8; }
     }
-    audio:hover {
-      box-shadow: 0 0 40px #ffd700;
-      transition: 0.4s ease;
-    }
   </style>
 
-  <!-- 🌼 Auto Play When Visible Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const audio = document.getElementById("vandanaAudio");
-      let hasPlayed = false;
-
-      // Fade in volume smoothly
-      function fadeIn(audio) {
-        let vol = 0;
-        audio.volume = 0;
-        const interval = setInterval(() => {
-          if (vol < 0.5) { // half volume
-            vol += 0.05;
-            audio.volume = vol;
-          } else {
-            clearInterval(interval);
-          }
-        }, 300);
-      }
-
-      // Observe when section becomes visible
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && !hasPlayed) {
-            hasPlayed = true;
-            audio.play().then(() => fadeIn(audio)).catch(err => console.log("Autoplay blocked:", err));
-          }
-        });
-      }, { threshold: 0.5 });
-
-      observer.observe(document.getElementById("saraswati"));
-    });
-  </script>
-
 </section>
+
+
+
 
 
 
