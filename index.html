@@ -31,54 +31,100 @@
 <meta name="twitter:image" content="https://barnawalprem3-collab.github.io/Adarsha_School_Website/images/school_building.jpg">
 
 <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#fefefe; }
-    header { background:#004080; color:#fff; padding:20px 0; text-align:center; }
-    nav { background:#003366; display:flex; justify-content:center; flex-wrap:wrap; }
-    nav a { color:#fff; padding:12px 18px; text-decoration:none; display:block; }
-    nav a:hover { background:#0059b3; }
-    section { padding:40px 20px; max-width:1100px; margin:auto; }
-    h2,h3,h4 { color:#222; }
+:root {
+  --primary: #004aad;
+  --secondary: #f7b731;
+  --accent: #ff6b6b;
+  --bg: #f8fbff;
+  --text: #222;
+  --subtext: #555;
+}
 
-    
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #ffffff, var(--bg));
+  color: var(--text);
+}
 
-    /* Media section */
-    .media-container {
-      max-width:1000px;
-      margin:30px auto;
-      text-align:center;
-    }
+/* Section container */
+section {
+  background: white;
+  margin: 40px auto;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+}
 
-    img.media-content,
-    video.media-content {
-      width:100%;
-      border-radius:10px;
-      display:none;
-    }
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
 
-    .active { display:block !important; }
+/* Paragraphs */
+p {
+  text-align: center;
+  color: var(--subtext);
+  line-height: 1.6;
+}
 
-    .btn {
-      background:#004aad;
-      color:#fff;
-      border:none;
-      padding:12px 28px;
-      border-radius:6px;
-      cursor:pointer;
-      font-size:16px;
-      transition:0.3s;
-      margin-top:15px;
-    }
+/* Buttons */
+button, .btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
 
-    .btn:hover { background:#003366; }
+button:hover, .btn:hover {
+  background: var(--secondary);
+  color: var(--text);
+}
 
-    footer {
-      text-align:center;
-      padding:25px 10px;
-      background:#222;
-      color:#fff;
-      font-size:14px;
-    }
-  </style>
+/* Images */
+img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Section Dividers */
+.section-divider {
+  height: 4px;
+  width: 80px;
+  background: var(--secondary);
+  margin: 10px auto 30px;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #003366, #00264d);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+</style>
+
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-29D7D69HPG"></script>
