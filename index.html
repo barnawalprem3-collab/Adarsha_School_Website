@@ -633,45 +633,60 @@
   </div>
 </section>
 
-
-<!-- 🌈 Avatar GIF Section -->
+<!-- 🌸 Unlimited Avatar Animation Section -->
 <section id="avatar-section" 
-         style="text-align:center; padding:80px 20px; background:linear-gradient(135deg, #f0f9ff, #fff0f6); position:relative; overflow:hidden;">
+         style="text-align:center; padding:100px 20px;
+                background:linear-gradient(135deg, #ffe6f2, #e6f7ff, #fff8e1);
+                position:relative; overflow:hidden;">
 
-  <!-- Glowing Animation Background -->
-  <div style="position:absolute; top:0; left:0; width:100%; height:100%;
-              background:radial-gradient(circle at center, rgba(255,255,255,0.3) 0%, transparent 70%);
-              animation: pulse 4s infinite; z-index:0;"></div>
+  <!-- Soft glowing gradient orbs -->
+  <div style="position:absolute; top:-50px; left:-50px; width:200px; height:200px; 
+              background:radial-gradient(circle, rgba(255,192,203,0.5), transparent);
+              filter:blur(60px); animation: floatOrb1 8s ease-in-out infinite alternate;"></div>
 
-  <!-- Avatar Container -->
+  <div style="position:absolute; bottom:-50px; right:-50px; width:250px; height:250px;
+              background:radial-gradient(circle, rgba(173,216,230,0.6), transparent);
+              filter:blur(80px); animation: floatOrb2 10s ease-in-out infinite alternate;"></div>
+
   <div style="position:relative; z-index:1;">
-    <h2 style="font-size:2rem; color:#333; margin-bottom:20px; font-family:'Poppins', sans-serif;">
+    <h2 style="font-size:2.3rem; color:#222; margin-bottom:25px; font-family:'Poppins', sans-serif; text-shadow:0 2px 6px rgba(0,0,0,0.1);">
       🌟 Unlimited Avatar Animation 🌟
     </h2>
 
-    <!-- Your GIF Avatar -->
+    <!-- Avatar GIF (larger, glowing, and floating) -->
     <img src="https://raw.githubusercontent.com/barnawalprem3-collab/Adarsha_School_Website/main/51f020b95eb47bbc38decaa835c748c7%20(2).gif"
          alt="Unlimited Avatar"
-         style="width:200px; height:200px; border-radius:50%; border:5px solid #ff80bf;
-                box-shadow:0 0 25px #ff80bf, 0 0 50px #80d4ff; animation: float 3s ease-in-out infinite;">
+         style="width:280px; height:280px; border-radius:50%;
+                border:8px solid #ff80bf;
+                box-shadow:0 0 40px #ff80bf, 0 0 80px #80d4ff;
+                animation: floatAvatar 4s ease-in-out infinite;">
 
-    <p style="font-size:1.1rem; color:#444; margin-top:25px; font-family:'Poppins', sans-serif;">
-      This beautiful animated avatar adds life and creativity to your website!
+    <p style="font-size:1.2rem; color:#333; margin-top:30px; font-family:'Poppins', sans-serif;">
+      This stunning animated avatar brings creativity, energy, and visual appeal to your website ✨
     </p>
   </div>
 </section>
 
-<!-- 🌟 Animation Styles -->
+<!-- 🌈 Animations -->
 <style>
-@keyframes float {
+@keyframes floatAvatar {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-15px); }
 }
-@keyframes pulse {
-  0%, 100% { opacity: 0.8; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.1); }
+
+@keyframes floatOrb1 {
+  from { transform: translate(0,0) scale(1); }
+  to { transform: translate(30px,40px) scale(1.1); }
+}
+
+@keyframes floatOrb2 {
+  from { transform: translate(0,0) scale(1); }
+  to { transform: translate(-40px,-30px) scale(1.1); }
 }
 </style>
+
+
+
 
 
 
