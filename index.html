@@ -182,7 +182,7 @@
     🌺 श्री सरस्वती देवी 🌺
   </h2>
 
-  <!-- Your Original Saraswati GIF -->
+  <!-- Saraswati GIF -->
   <img src="https://raw.githubusercontent.com/barnawalprem3-collab/Adarsha_School_Website/main/url%20(1).gif" 
        alt="Goddess Saraswati" 
        style="width:320px; max-width:90%; border-radius:25px; box-shadow:0 0 30px gold; margin-top:20px;
@@ -197,14 +197,19 @@
     विद्यरूपे विशालाक्षि विद्यां देहि नमोऽस्तुते ॥
   </p>
 
-  <!-- 🎶 Saraswati Vandana Song -->
-  <div style="margin-top:30px; z-index:2; position:relative;">
-    <h3 style="color:#b8860b; font-family:'Georgia';">🎶 Saraswati Vandana</h3>
-    <audio controls autoplay loop>
-      <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0a3e1df6a1.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+  <!-- Tap to Start Button -->
+  <button id="startBtn" 
+          style="margin-top:30px; background:#fdd835; color:#4a2600; font-size:18px; padding:10px 25px; 
+                 border:none; border-radius:25px; box-shadow:0 0 15px gold; cursor:pointer; 
+                 font-family:'Georgia'; font-weight:bold; z-index:3; position:relative;">
+      🙏 Tap to Start Saraswati Vandana 🎶
+  </button>
+
+  <!-- Audio File -->
+  <audio id="vandana" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0a3e1df6a1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <style>
     @keyframes fadeIn {
@@ -215,9 +220,26 @@
       from { opacity: 0.4; }
       to { opacity: 0.8; }
     }
+
+    /* Button tap animation */
+    #startBtn:active {
+      transform: scale(0.95);
+      background:#ffe082;
+    }
   </style>
 
+  <!-- Script to play song on tap -->
+  <script>
+    document.getElementById("startBtn").addEventListener("click", function() {
+      var audio = document.getElementById("vandana");
+      audio.play();
+      this.style.display = "none"; // hide button after tap
+      alert("🌸 Saraswati Vandana is now playing 🌸");
+    });
+  </script>
+
 </section>
+
 
 
 
